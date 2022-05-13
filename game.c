@@ -2,7 +2,6 @@
  * card-related helper functions but must use thm at least as frequently as indicated below (hit means either player or dealer hit):
  * make_deck:1; shuffle:1; deal: 3+1/hit; total: 2+1/hit; show: 2; destroy_deck: 1
  */
- /* 15 points */
  #include "card.h"
  
  int main(void) {
@@ -23,21 +22,23 @@ while(running)
    dealerHand = NULL;
    deck = make_deck(); // new deck
    int player_tot = 0; //
-int dealer_tot = 0;
-//printf("SHUFFLED DECK:\n");
+   int dealer_tot = 0;
+
+   printf("SHUFFLED DECK:\n");
    deck = shuffle(deck);
    char keep; // keep shuffling?
+
    //We can use this loop to keep shuffling deck.
-   /*printf("Shuffle again?('y'/'Y' or 'n'/'N')\n");
-scanf(" %c", &keep);
+   printf("Shuffle again?('y'/'Y' or 'n'/'N')\n");
+   scanf(" %c", &keep);
   
    while(keep == 'y' || keep == 'Y')
    {
        // continuous shuffling until user decides to stop
        deck = shuffle(deck);
        printf("Shuffle again?('y'/'Y' or 'n'/'N')\n");
-scanf(" %c", &keep);
-   } // end while*/
+       scanf(" %c", &keep);
+   }
 
 
    // GAME BEGINS

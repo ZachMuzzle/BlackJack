@@ -1,4 +1,4 @@
-# 10 points
+ # 10 points
 # Define Make rules as follows:
 # A default rule to compile a .c file into a .o file
 # A rule for "all" to build the entire project into a program called "game"
@@ -10,8 +10,12 @@ OBJS = $(patsubst %.c, %.o, $(SRC))
 rule:$(OBJS)
 
 all: game
+
 game: game.o card.o
-	cc -o game game.o card.o
+	cc -o game.exe game.o card.o
+
+run: game
+	./game.exe
 
 clean:
-	rm -rf *.o
+	rm -rf *.o && rm -rf *.exe

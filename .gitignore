@@ -1,0 +1,4 @@
+#Ignore not important files
+*.vscode/
+*.o
+*.exe

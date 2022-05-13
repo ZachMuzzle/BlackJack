@@ -1,4 +1,3 @@
-/* 40 points */
 /* Define all card/deck related functions as follows:
  * make_deck: generates a new list of 52 unique cards with ranks 1-13 and suits CDHS. Returns a pointer to the head of the list. 
  *            Note: you must use malloc to create all 52 cards.
